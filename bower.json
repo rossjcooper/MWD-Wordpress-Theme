@@ -1,0 +1,24 @@
+{
+  "name": "mwd-wordpress-theme",
+  "description": "A starter theme designed for the modern web developer using the latest and most popular development tools and patterns.",
+  "main": "public/main.js",
+  "authors": [
+    "Ross Cooper <therossjcooper@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "base",
+    "starter",
+    "theme",
+    "modern"
+  ],
+  "homepage": "https://github.com/rossjcooper/MWD-Wordpress-Theme",
+  "directory": "libs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

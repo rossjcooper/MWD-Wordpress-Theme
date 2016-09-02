@@ -1,0 +1,13 @@
+{
+    "name": "rossjcooper/mwd-wordpress-theme",
+    "description": "A starter theme designed for the modern web developer using the latest and most popular development tools and patterns.",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Ross Cooper",
+            "email": "therossjcooper@gmail.com"
+        }
+    ],
+    "require": {}
+}
