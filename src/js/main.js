@@ -1,0 +1,3 @@
+/*
+ Here is where you should do all your main JS scripting.
+ */
