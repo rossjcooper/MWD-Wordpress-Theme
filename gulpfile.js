@@ -37,7 +37,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(sassDest))
 });
 
-gulp.task('default', ['js', 'sass']);
+gulp.task('default', ['scripts', 'sass']);
 
 gulp.task('watch', function(){
 	// watch sass files
