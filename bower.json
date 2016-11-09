@@ -20,5 +20,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "sass-meyer-reset": "*"
+  }
 }

@@ -36,6 +36,7 @@ function mwd_enqueue_styles()
 function mwd_enqueue_scripts()
 {
     wp_enqueue_script('theme-script', get_template_directory_uri() . '/public/js/main' . mwd_get_asset_suffix() . '.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('html5shiv', get_template_directory_uri() . '/bower_components/html5shiv/dist/html5shiv' . mwd_get_asset_suffix() . '.js');
 }
 
 /**
