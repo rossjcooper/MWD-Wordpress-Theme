@@ -1,4 +1,6 @@
 vendor/
 libs/
 node_modules/
-public/
+public/js/
+public/css/
+bower_components/
