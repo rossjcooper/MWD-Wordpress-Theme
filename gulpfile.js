@@ -14,34 +14,34 @@ var jsDest = 'public/js';
 var sassSrc = 'src/sass/**/*.scss';
 var sassDest = 'public/css';
 //javascript task
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
     return gulp.src(jsSrc)
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest(jsDest))
-    .pipe(sourcemaps.write())
-    .pipe(rename('main.min.js'))
-    .pipe(uglify().on('error', function(e){
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(jsDest))
+        .pipe(sourcemaps.write())
+        .pipe(rename('main.min.js'))
+        .pipe(uglify().on('error', function (e) {
             console.log(e);
-         }))
-    .pipe(gulp.dest(jsDest));
+        }))
+        .pipe(gulp.dest(jsDest));
 });
 //sass task
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     return gulp.src(sassSrc)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(sassDest))
-    .pipe(sourcemaps.write())
-    .pipe(autoprefixer())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(cleancss())
-    .pipe(gulp.dest(sassDest))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(sassDest))
+        .pipe(sourcemaps.write())
+        .pipe(autoprefixer())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(cleancss())
+        .pipe(gulp.dest(sassDest))
 });
 
 gulp.task('default', ['scripts', 'sass']);
 
-gulp.task('watch', function(){
-	// watch sass files
-  gulp.watch(sassSrc, ['sass']);
-  // watch .js files
-  gulp.watch(jsSrc, ['scripts']);
+gulp.task('watch', function () {
+    // watch sass files
+    gulp.watch(sassSrc, ['sass']);
+    // watch .js files
+    gulp.watch(jsSrc, ['scripts']);
 });
