@@ -21,10 +21,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "html5shiv": "^3.7.3",
-    "sass-meyer-reset": "*"
+    "sass-meyer-reset": "*",
+    "font-awesome": "Font-Awesome#^4.7.0"
   }
 }
